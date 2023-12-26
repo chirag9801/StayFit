@@ -17,7 +17,7 @@ function Messages() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://stay-fit-rouge.vercel.app/api/user/mark-all-notification-as-seen",
+        "http://localhost:5000/api/user/mark-all-notification-as-seen",
         { userId: user._id },
         {
           headers: {

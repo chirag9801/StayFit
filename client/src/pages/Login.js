@@ -13,7 +13,7 @@ function Login() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://stay-fit-rouge.vercel.app/api/user/login",
+        "http://localhost:5000/api/user/login",
         values
       );
       dispatch(hideLoading());
