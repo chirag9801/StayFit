@@ -17,7 +17,7 @@ function Messages() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:5000/api/user/mark-all-notification-as-seen",
+        "https://stayfit-fr11.onrender.com/api/user/mark-all-notification-as-seen",
         { userId: user._id },
         {
           headers: {
