@@ -4,6 +4,16 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors());
+// CORS Setup Do Not Touch
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST,GET,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(200);
+  }
+  next();
+});
 
 require("dotenv").config();
 const dbConfig = require("./config/dbconfig");
