@@ -34,6 +34,11 @@ function Layout({ children }) {
       path: "/profile",
       icon: "ri-shield-user-fill",
     },
+    {
+      name: "Info",
+      path: "/info", // Add a link to the Info page
+      icon: "ri-information-line",
+    },
 
     // {
     //   name: "Logout",
@@ -63,6 +68,11 @@ function Layout({ children }) {
       name: "Profile",
       path: "/profile",
       icon: "ri-shield-user-fill",
+    },
+    {
+      name: "Info",
+      path: "/info", // Add a link to the Info page
+      icon: "ri-information-line",
     },
 
     // {
